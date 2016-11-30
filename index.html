@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/stylesheet.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -54,11 +55,20 @@
         </div>
       </div>
       </div>
-      </div><!-- /.col-sm-7 -->
+      </div><!-- /.col-sm-12 -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+      <!--Prova colonne-->
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8<span class="glyphicon glyphicon-plus"></span></div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        <!-- Optional: clear the XS cols if their content doesn't match in height -->
+        <div class="clearfix visible-xs-block"></div>
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      </div>
+
   </body>
 </html>
