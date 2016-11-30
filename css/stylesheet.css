@@ -1,0 +1,6 @@
+/*Prova row*/
+.row.show-grid [class^=col-] {
+    padding: 10px 0;
+    background: #ede9f4;
+    border: 1px solid #ddd;
+}
