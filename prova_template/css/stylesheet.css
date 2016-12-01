@@ -1,12 +1,5 @@
 /*Prova row*/
-.row.show-grid [class^=col-] {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #ede9f4;
-    border: 1px solid #ddd;
-    margin: 0 0 10px 0;
-}
-.row.show-grid{
-	margin-right: 0;
-	margin-left: 0;
+body {
+  overflow-x: hidden;
+  font-family: 'Exo', Helvetica, Arial, sans-serif;
 }
