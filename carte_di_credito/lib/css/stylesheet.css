@@ -305,14 +305,15 @@ section {
   .credit-card-header .col-sm-4 {
       margin-bottom: 20px;
   }
- #nav{
+ 
+}
+@media (max-width: 467px) {
+  #nav{
     display: none;
   }
   #wrap > .container {
     padding: 20px 15px 0;
   }
-}
-@media (max-width: 467px) {
   #accordion{
     display: block;
   }
