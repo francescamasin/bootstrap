@@ -16,8 +16,8 @@ $('.scroll-top').click(function(){
 /* smooth scrolling for nav sections */
 $('#nav .navbar-nav li:first-child').addClass('active');
 $('#nav .navbar-nav li>a').click(function(){
+	//$('#nav .navbar-nav li:first-child').removeClass('active');
   var link = $(this).attr('href');
-  var posi = $(link).offset().top-60;
-  console.log(posi);
+  var posi = $(link).offset().top;
   $('body,html').animate({scrollTop:posi},700);
 });
