@@ -52,7 +52,10 @@ h3.subtitle{
 	color: #f9e205;
 	text-shadow: 2px 2px 2px #999;
 }
-
+.btn-primary{
+  background: #0073cf;
+  border-radius: 0;
+}
 .row {
   margin-left:0px;
   margin-right:0px;
