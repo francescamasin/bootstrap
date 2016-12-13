@@ -137,6 +137,7 @@ header .dropdown-menu .fa-chevron-down{
 	color: #857363;
 	font-size: 16px;
 	text-transform: capitalize;
+  font-weight: normal;
 }
 .dropdown-menu > li > a:hover, 
 .dropdown-menu > li > a:focus {
