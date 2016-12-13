@@ -34,8 +34,6 @@ h3.subtitle{
     color: #fff;
 }
 .credit-card-header{
-	margin-bottom: 40px;
-	margin-top: 40px;
 }
 .credit-card-header .col-sm-4{
 	padding-left:0;
@@ -97,6 +95,10 @@ h3.subtitle{
 header {
   color:#555;
 }
+header.masthead{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 
 header .dropdown-menu {
   background: #ece6dd;
@@ -146,7 +148,7 @@ header .dropdown-menu .fa-chevron-down{
 .dropdown-menu > li > a:focus {
 	color: #ece6dd;
 }
-.navbar-custom  .navbar-nav li,
+.navbar-custom  .navbar-nav li.active,
 .navbar-custom  .navbar-nav li:hover,
 .navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, 
 .navbar-custom .navbar-nav .active a  {

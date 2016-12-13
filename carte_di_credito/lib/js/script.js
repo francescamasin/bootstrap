@@ -1,8 +1,7 @@
 /* affix the navbar after scroll below header */
 $('#nav').affix({
       offset: {
-        /*top: $('header').height()-$('#nav').height()*/
-        top: $('header').height()
+        top: $('header').height()-$('#nav').height()
       }
 });	
 
@@ -18,7 +17,7 @@ $('.scroll-top').click(function(){
 $('#nav .navbar-nav li:first-child').addClass('active');
 $('#nav .navbar-nav li>a').click(function(){
   var link = $(this).attr('href');
-  var posi = $(link).offset().top;
+  var posi = $(link).offset().top-70;
   console.log(posi);
   $('body,html').animate({scrollTop:posi},700);
 });
