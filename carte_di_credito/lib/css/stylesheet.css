@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	font-family:Verdana, sans-serif;
+}
+h2.title{
+	margin-top:0;
+	font-size: 30px;
+	color:#c41230;
+}
+h3.subtitle{
+	margin-bottom:20px;
+}
+.navbar-default{
+	background: #fff;
+	border: 0;
+}
+.navbar-default a.navbar-brand img{
+	height:50px;
+}
+.navbar-default .navbar-form,
+.navbar-default .nav.navbar-nav{
+	padding: 15px;
+}
+.line-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    text-align: left;
+    background: #DC1431;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.credit-card-header{
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.credit-card-header .col-sm-4{
+	padding-left:0;
+}
+.credit-card-header .rating-star{
+	text-align: center;
+	margin-top: 10px;
+}
+.credit-card-header img{
+	max-width: 100%;
+}
+.fa-star,
+.fa-star-half-o{
+	color: #f9e205;
+	text-shadow: 2px 2px 2px #999;
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+
+
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+#footer {
+  background-color:#414141;
+}
+
+#footer a {
+  color:#efefef;
+}
+
+header {
+  color:#555;
+}
+
+header .dropdown-menu {
+  top:74px;
+  background: #ffcc33;
+  border-width:0;
+}
+
+
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+  
+.navbar-nav {
+  margin: 1px 1px; 
+}  
+  
+/* customize nav style */
+.navbar-custom {
+    background-color: #ece6dd;
+	font-weight:700;
+    text-transform:uppercase;
+    border-width:0;
+}
+.navbar-custom  .navbar-nav>li>a {
+	color: #857363;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+.navbar-custom  .dropdown-menu li>a:hover {
+	color: #ece6dd;
+}
+.navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
+	background-color: #857363 !important;
+}
+.navbar-custom  .navbar-nav li.active::after,
+.navbar-custom  .navbar-nav .affix li.active:first-child::after {
+    content: " ";
+    border-style: solid;
+    border-width: .8125rem .78125rem 0 .78125rem;
+    border-color: #857363 transparent transparent transparent;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+}
+ .navbar-nav.nav-justified > li{
+      float:none;
+  }
+.navbar-collapse.in { /*3.0.2 bug workaround*/
+    overflow-y: visible;
+}
+
+.navbar-toggle {
+	outline:0;
+}
+
+.divider {
+	border-bottom: 1px solid #ccc;
+}
+
+.panel {
+	border-width:0;
+}
+
+@media (max-width: 768px) {
+	header {
+	
+	}
+}
+
+#map-canvas {
+  	width: 100%; 
+  	height: 300px;
+	margin: 0;
+	padding: 15px;
+}
+
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #f2f3f2;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#222;
+} 
+ 
+
+section {
+  color: #ffffff;
+  min-height: 400px;
+  height: auto !important;
+  height: 100%;
+  padding-top:100px;
+}
+.col-sm-12.table .col-sm-4,
+.col-sm-12.table .col-sm-3,
+.col-sm-12.table .col-sm-2{
+	padding: 0;
+	border-right:1px solid #eeeeee;
+}
+.col-sm-12.table h4.table-title{
+	border-bottom:1px solid #eeeeee;
+	padding:15px 10px;
+	background: #ece6dd;
+	color:#857363;
+	margin: 0;
+}
+.col-sm-12.table p.table-paragraph{
+	padding:5px 10px;
+}
+.col-sm-12.table p.table-paragraph:first-child{
+	padding:5px 10px;
+	font-size: 16px;
+	margin-right: 0;
+}
+#Rewards{
+	background: #f9f7f4;
+    padding: 30px 0 40px 0;
+    margin-bottom:20px;
+}
+.tab-container .tab-content{
+	background: #ece6dd;
+    padding: 20px 15px;
+    text-align: justify;
+}
+.tab-container .nav-tabs{
+	border-bottom: 0;
+}
+.tab-container .nav-tabs > li > a{
+	color:#6b5e51;
+	background-color: rgba(209,201,192,0.9);
+	font-size: 24px;
+	margin-right: 5px;
+	border-radius: 0;
+	border: 0;
+}
+.tab-container .nav-tabs > li.active a{
+	 background: #ece6dd;
+    color: #524940;
+}
+.footer-bottom-section{
+	    background-color: #ece6dd;
+	    padding: 30px 0;
+	    margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .navbar-nav.nav-justified > li{
+      float:none;
+  }
+   .navbar-nav.nav-justified > li a{
+  		height:70px;
+	}
+  .credit-card-header .rating-star{
+  	padding: 0;
+  }
+}
