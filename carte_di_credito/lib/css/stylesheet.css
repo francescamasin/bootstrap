@@ -102,11 +102,15 @@ header.header-container{
 header .dropdown-menu {
   background: #ece6dd;
   border-width:0;
+  padding: 0;
 }
-header .dropdown-menu li:hover{
-background: #857363;
+.dropdown-menu > li:hover,
+.dropdown-menu > li > a:hover{
+  background: #857363;
 }
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus{
 	background: #857363;
 	color: #fff;
 }
