@@ -146,6 +146,8 @@ header .dropdown-menu .fa-chevron-down{
 .dropdown-menu > li > a:focus {
 	color: #ece6dd;
 }
+.navbar-custom  .navbar-nav li,
+.navbar-custom  .navbar-nav li:hover,
 .navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, 
 .navbar-custom .navbar-nav .active a  {
 	background-color: #857363 !important;
