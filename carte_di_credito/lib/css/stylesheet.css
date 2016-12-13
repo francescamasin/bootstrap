@@ -276,9 +276,18 @@ section {
     color: #524940;
 }
 .footer-bottom-section{
-	    background-color: #ece6dd;
+	    background-color: #f9f7f4;
 	    padding: 30px 0;
 	    margin-top: 20px;
+}
+.footer-bottom-section .title-bottom{
+    background: #857363;
+    color: #fff;
+}
+.footer-bottom-section .title-bottom h3{
+    background: #857363;
+    color: #fff;
+    padding: 15px;
 }
 #accordion{
   display: none;
@@ -319,5 +328,15 @@ section {
   }
   .container-section{
     display: none;
+  }
+  .panel-default > .panel-heading{
+    color: #857363;
+    background-color: #ece6dd;
+  }
+  .col-sm-12.table .col-sm-4, .col-sm-12.table .col-sm-3, .col-sm-12.table .col-sm-2{
+    border-right: 0;
+  }
+  .container-section{
+    text-align: justify;
   }
 }
