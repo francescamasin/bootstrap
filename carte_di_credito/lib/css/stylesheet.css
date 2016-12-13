@@ -289,8 +289,9 @@ section {
     color: #fff;
     padding: 15px;
 }
-#accordion{
-  display: none;
+#accordion,
+.container > .navbar-collapse.menu-mobile{
+  display: none !important;
 }
 #accordion .fa-chevron-down.right{
   float:right;
@@ -324,7 +325,10 @@ section {
     padding: 20px 15px 0;
   }
   #accordion{
-    display: block;
+    display: block !important;
+  }
+  .container > .navbar-collapse.in.menu-mobile {
+    display: block !important;
   }
   .container-section{
     display: none;
