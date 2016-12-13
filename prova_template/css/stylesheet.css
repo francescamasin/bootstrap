@@ -67,3 +67,23 @@ header .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+.estero div.col-md-2.ng.scope{
+	padding-right: 0;
+}
+.estero div ul.sideMenuLeft{
+	background: rgba(217, 212, 200, 0.9);
+	margin-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.estero div ul.sideMenuLeft li{
+	height: 30px;
+	line-height: 30px;
+	border-bottom:1px solid grey;
+	color:#000;
+}
+.estero div ul.sideMenuLeft li:last-child{
+	border: 0;
+}
+.estero div ul.sideMenuLeft li.active{
+}
