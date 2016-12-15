@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'NomahScript-Light';
+  src: url('../fonts/Nomah_Light/NomahScript-Light.otf');
+  src: url('../fonts/Nomah_Light/NomahScript-Light.woff') format('woff'), url('../fonts/Nomah_Light/NomahScript-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'riesling';
+  src: url('../fonts/riesling/riesling-webfont.eot');
+  src: url('../fonts/riesling/riesling-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/riesling/riesling-webfont.woff') format('woff'), url('../fonts/riesling/riesling-webfont.ttf') format('truetype'), url('../fonts/riesling/riesling-webfont.svg#riesling-webfont') format('svg');
+}
+
 /*Prova row*/
 body {
   overflow-x: hidden;
@@ -46,6 +57,11 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
 }
+#logo{
+  font-family: "riesling", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 44px;
+  color:#000;
+}
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 300px;
@@ -66,24 +82,4 @@ header .intro-text .intro-heading {
     line-height: 75px;
     margin-bottom: 50px;
   }
-}
-.estero div.col-md-2.ng.scope{
-	padding-right: 0;
-}
-.estero div ul.sideMenuLeft{
-	background: rgba(217, 212, 200, 0.9);
-	margin-top: 20px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.estero div ul.sideMenuLeft li{
-	height: 30px;
-	line-height: 30px;
-	border-bottom:1px solid grey;
-	color:#000;
-}
-.estero div ul.sideMenuLeft li:last-child{
-	border: 0;
-}
-.estero div ul.sideMenuLeft li.active{
 }
