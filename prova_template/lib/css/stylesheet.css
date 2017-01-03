@@ -303,6 +303,9 @@ header .intro-text .intro-heading {
   max-width: 400px;
   margin: 0 auto;
 }
+#portfolio .portfolio-item .portfolio-link-full{
+  max-width: 1800px;
+}
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(243, 20, 75, 0.9);
   position: absolute;
