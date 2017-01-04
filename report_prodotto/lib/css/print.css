@@ -69,7 +69,8 @@
     page-break-before: always;
     position: relative;
   }
-  /*.section-container#anagrafica,
+  /*
+ .section-container#anagrafica,
   .section-container#fido,
   .section-container#capitale-sociale,
   .section-container#partecipazioni,
