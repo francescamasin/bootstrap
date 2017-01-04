@@ -60,9 +60,9 @@ div#wrap {width: auto;}
 .box-empty{
   display: none;
 }
-box-left.box.col-sm-4{
-  width: 30%;
-  margin-right: 3%;
+.box-left.box.col-sm-4{
+  width: 30% !important;
+  margin-right: 3% !important;
 }
 section#anagrafica,
 section#fido,
