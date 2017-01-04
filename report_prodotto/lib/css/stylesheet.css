@@ -335,7 +335,10 @@ section#attivita-svolta,
 section#fatturato,
 section#eventi-negativi,
 section#situazione-finanziaria{
-  background-color: #ddd;
+  page-break-after: always;
+}
+.section-container header.header-row{
+  background-color: #038aa4;
 }
 .section-container row .box-left,
 .section-container row .box-right{
