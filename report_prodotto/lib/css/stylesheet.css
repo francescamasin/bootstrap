@@ -17,6 +17,9 @@ h2{
 h3{
   font-size: 20px;
 }
+.page-break	{ 
+  display: none; 
+}
 h2.title{
 	margin-top:0;
 	font-size: 30px;
@@ -256,6 +259,10 @@ div#wrap {
   line-height: 30px;
   margin-bottom: 10px;
 }
+.section-container#esponenti row.header-row,
+.section-container#esponenti row.header-row div{
+  margin-bottom: 0;
+}
 .section-container .sedi-secondarie{
   width: 100%;
   padding: 0 15px;
@@ -265,3 +272,11 @@ div#wrap {
 .section-container .sedi-secondarie row div.line-box{
   border-bottom:0; 
 }
+/*.section-container#esponenti row div.line-box{
+  height: 25px;
+  line-height: 25px;
+}
+.section-container#esponenti row.header-row div.line-box{
+  height: 30px;
+  line-height: 30px;
+}*/

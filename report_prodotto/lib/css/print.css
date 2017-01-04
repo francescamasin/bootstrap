@@ -1,98 +1,143 @@
 @media print{
-body {font-size: 10pt;}
-div#wrap {width: auto;}
-.header-container .header-hr, .header-container .header-info {
+  body {font-size: 10pt;}
+  div#wrap {width: auto;}
+  .header-container .header-hr, .header-container .header-info {
+      width: 75%;
+  }
+  @page {
+    size: 210mm 297mm;
+  }
+  .col-sm-1, 
+  .col-sm-2, 
+  .col-sm-3, 
+  .col-sm-4, 
+  .col-sm-5, 
+  .col-sm-6, 
+  .col-sm-7, 
+  .col-sm-8, 
+  .col-sm-9, 
+  .col-sm-10, 
+  .col-sm-11, 
+  .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+  width: 83.33333333%;
+  }
+  .col-sm-9 {
     width: 75%;
-}
-@page {
-  size: 210mm 297mm;
-}
-.col-sm-1, 
-.col-sm-2, 
-.col-sm-3, 
-.col-sm-4, 
-.col-sm-5, 
-.col-sm-6, 
-.col-sm-7, 
-.col-sm-8, 
-.col-sm-9, 
-.col-sm-10, 
-.col-sm-11, 
-.col-sm-12 {
-  float: left;
-}
-.col-sm-12 {
-  width: 100%;
-}
-.col-sm-11 {
-  width: 91.66666667%;
-}
-.col-sm-10 {
- width: 83.33333333%;
-}
-.col-sm-9 {
-  width: 75%;
-}
-.col-sm-8 {
-  width: 66.66666667%;
-}
-.col-sm-7 {
-  width: 58.33333333%;
-}
-.col-sm-6 {
-  width: 50%;
-}
-.col-sm-5 {
-  width: 41.66666667%;
-}
-.col-sm-4 {
-  width: 33.33333333%;
-}
-.col-sm-3 {
-  width: 25%;
-}
-.col-sm-2 {
-  width: 16.66666667%;
-}
-.col-sm-1 {
-  width: 8.33333333%;
-}
-.box-empty{
-  display: none;
-}
-.box-left.box.col-sm-4{
-  width: 30% !important;
-  margin-right: 3% !important;
-}
-section#anagrafica,
-section#fido,
-section#esponenti,
-section#recensioni,
-section#sedi-attive,
-section#attivita-svolta,
-section#fatturato,
-section#eventi-negativi,
-section#situazione-finanziaria{
-  page-break-after: always;
-}
-.section-container header.header-row{
-  background-color: #038aa4 !important;
-  color:#fff !important;
-}
-.section-container row .box-left,
-.section-container row .box-right{
-  background-color: #ddd !important;
-}
-.section-container row .arrow{
-  background-image: url("../img/arrow.png") !important; 
-  background-color: #ddd !important;
-  background-repeat: no-repeat !important;
-  background-position: top right !important;
-}
-.section-container row .border{
-  background-color: #fff !important;
-}
-.section-container row .bkg{
-  background-color: #038aa4 !important;
-}
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .box-empty{
+    display: none;
+  }
+  .box-left.box.col-sm-4{
+    width: 30% !important;
+    margin-right: 3% !important;
+  }
+  .page-break	{ 
+    display: block;
+    page-break-before: always;
+    position: relative;
+  }
+  /*.section-container#anagrafica,
+  .section-container#fido,
+  .section-container#capitale-sociale,
+  .section-container#partecipazioni,
+  section#recensioni,
+  section#sedi-attive,
+  section#attivita-svolta,
+  section#fatturato,
+  section#eventi-negativi,
+  section#situazione-finanziaria{
+    page-break-before: always !important;
+  }*/
+  .section-container#anagrafica header.header-row,
+  .section-container#cat-rischio header.header-row,
+  .section-container#score-estero header.header-row,
+  .section-container#esponenti header.header-row,
+  section#capitale-sociale header.header-row,
+   .section-container#fido header.header-row{
+    margin-top: 10px !important;
+  }
+  .section-container header.header-row{
+    background-color: #038aa4 !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .section-container header.header-row h2,
+  .section-container header.header-row h2 i.fa{
+    color:#f1f1f1 !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .section-container row.header-row div {
+      background: #038aa4 !important;
+      color: #ccc !important;
+      -webkit-print-color-adjust: exact;
+  }
+  .section-container row .box-left,
+  .section-container row .box-right,
+  .section-container h4.subtitle {
+    background-color: #ddd !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .section-container row .arrow{
+    background-image: url("../img/arrow.png") !important; 
+    background-color: #ddd !important;
+    background-repeat: no-repeat !important;
+    background-position: top right !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .section-container row .border{
+    background-color: #fff !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .section-container row .bkg{
+    background-color: #038aa4 !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .section-container row .bkg h1,
+  .section-container row .bkg h2{
+    color: #f1f1f1 !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .section-container#esponenti h4.subtitle{
+    margin-bottom: 0 !important;
+  }
+  .section-container#esponenti row div.line-box{
+    height: 27px !important;
+    line-height: 27px !important;
+  }
+  .section-container#esponenti row.header-row div.line-box{
+    height: 30px !important;
+    line-height: 30px !important;
+  }
 }
