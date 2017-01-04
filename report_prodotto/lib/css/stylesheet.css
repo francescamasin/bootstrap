@@ -118,8 +118,12 @@ div#wrap {
 }
 .section-container ul li{
   list-style-type: none;
-  height: 30px;
-  line-height: 30px;
+  height: 27px;
+  line-height: 27px;
+}
+.section-container#fornitori ul li{
+  height: 25px;
+  line-height: 25px;
 }
 .section-container h4.title{
   color:#038aa4;
@@ -159,9 +163,9 @@ div#wrap {
   margin-right: 10px;
 }
 .section-container row div.line-box{
-  height: 30px;
+  height: 27px;
   border-bottom:1px solid #ddd; 
-  line-height: 30px;
+  line-height: 27px;
   margin-bottom: 2px;
 }
 .section-container#fatturato row div.line-box{
@@ -171,8 +175,8 @@ div#wrap {
 .section-container row div.bkg-box{
   background: #038aa4;
   color: #fff;
-  height: 30px;
-  line-height: 30px;
+  height: 27px;
+  line-height: 27px;
   margin-bottom: 2px;
   border-bottom:1px solid #ddd; 
 }
@@ -241,8 +245,8 @@ div#wrap {
   text-align: center;
 }
 .section-container row.header-row{
-  height: 30px;
-  line-height: 30px;
+  height: 27px;
+  line-height: 27px;
   margin: 10px 0;
   background: #038aa4;
   color:#fff;
@@ -252,8 +256,8 @@ div#wrap {
 .section-container row.header-row div{
   background: #038aa4;
   color:#fff;
-  height: 30px;
-  line-height: 30px;
+  height: 27px;
+  line-height: 27px;
   margin-bottom: 10px;
 }
 .section-container#esponenti row.header-row,
@@ -264,16 +268,10 @@ div#wrap {
   width: 100%;
   padding: 0 15px;
   float: left;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .section-container .sedi-secondarie row div.line-box{
-  border-bottom:0; 
-}
-/*.section-container#esponenti row div.line-box{
+  border-bottom:0;
   height: 25px;
   line-height: 25px;
 }
-.section-container#esponenti row.header-row div.line-box{
-  height: 30px;
-  line-height: 30px;
-}*/

@@ -65,29 +65,17 @@
     margin-right: 3% !important;
   }
   .page-break	{ 
-    display: block;
-    page-break-before: always;
-    position: relative;
+    page-break-after: always; 
+    page-break-inside: avoid;
   }
-  /*
- .section-container#anagrafica,
-  .section-container#fido,
-  .section-container#capitale-sociale,
-  .section-container#partecipazioni,
-  section#recensioni,
-  section#sedi-attive,
-  section#attivita-svolta,
-  section#fatturato,
-  section#eventi-negativi,
-  section#situazione-finanziaria{
-    page-break-before: always !important;
-  }*/
-  .section-container#anagrafica header.header-row,
+  .page-break header.header-row{
+    margin-top:0 !important;
+  }
   .section-container#cat-rischio header.header-row,
   .section-container#score-estero header.header-row,
   .section-container#esponenti header.header-row,
-  section#capitale-sociale header.header-row,
-   .section-container#fido header.header-row{
+  .section-container#fornitori header.header-row,
+  .section-container#esperienze-fornitori header.header-row{
     margin-top: 10px !important;
   }
   .section-container header.header-row{
@@ -130,15 +118,12 @@
     color: #f1f1f1 !important;
     -webkit-print-color-adjust: exact;
   }
+  .section-container row div.bkg-box {
+    background-color: #038aa4 !important;
+    color: #f1f1f1 !important;
+    -webkit-print-color-adjust: exact;
+  }
   .section-container#esponenti h4.subtitle{
     margin-bottom: 0 !important;
-  }
-  .section-container#esponenti row div.line-box{
-    height: 27px !important;
-    line-height: 27px !important;
-  }
-  .section-container#esponenti row.header-row div.line-box{
-    height: 30px !important;
-    line-height: 30px !important;
   }
 }
