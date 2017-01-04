@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/* CSS Document */
+@media print{
 body {font-size: 10pt;}
 div#wrap {width: auto;}
 .header-container .header-hr, .header-container .header-info {
@@ -67,21 +66,26 @@ section#attivita-svolta,
 section#fatturato,
 section#eventi-negativi,
 section#situazione-finanziaria{
-  background-color: #ddd;
+  page-break-after: always;
+}
+.section-container header.header-row{
+  background-color: #038aa4 !important;
+  color:#fff !important;
 }
 .section-container row .box-left,
 .section-container row .box-right{
-  background-color: #ddd;
+  background-color: #ddd !important;
 }
 .section-container row .arrow{
-  background-image: url("../img/arrow.png"); 
-  background-color: #ddd;
-  background-repeat: no-repeat;
-  background-position: top right;
+  background-image: url("../img/arrow.png") !important; 
+  background-color: #ddd !important;
+  background-repeat: no-repeat !important;
+  background-position: top right !important;
 }
 .section-container row .border{
-  background-color: #fff;
+  background-color: #fff !important;
 }
 .section-container row .bkg{
-  background-color: #038aa4;
+  background-color: #038aa4 !important;
+}
 }
