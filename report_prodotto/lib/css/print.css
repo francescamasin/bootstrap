@@ -67,20 +67,21 @@ section#attivita-svolta,
 section#fatturato,
 section#eventi-negativi,
 section#situazione-finanziaria{
-  page-break-before: always;
+  background-color: #ddd;
 }
 .section-container row .box-left,
 .section-container row .box-right{
-  background: #ddd;
+  background-color: #ddd;
 }
 .section-container row .arrow{
-  background: url("../img/arrow.png") no-repeat top right #ddd;
+  background-image: url("../img/arrow.png"); 
+  background-color: #ddd;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 .section-container row .border{
-  background: #fff;
-  border: 1px solid #000;
+  background-color: #fff;
 }
 .section-container row .bkg{
-  background: #038aa4;
-  color:#fff;
+  background-color: #038aa4;
 }
