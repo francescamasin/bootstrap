@@ -338,7 +338,7 @@ section#situazione-finanziaria{
   page-break-after: always;
 }
 .section-container header.header-row{
-  background-color: #038aa4;
+  background-color: #038aa4 !important;
 }
 .section-container row .box-left,
 .section-container row .box-right{
