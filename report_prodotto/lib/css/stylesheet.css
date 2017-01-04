@@ -72,6 +72,10 @@ div#wrap {
   padding: 0 10px 30px;
   float: left;
 }
+.section-container{
+  float: left;
+  width: 100%;
+}
 .section-container #row-richiedente .box{
   min-height:140px;
   margin-bottom:15px;

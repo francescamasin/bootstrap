@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-body {font-size: 12pt;}
+body {font-size: 10pt;}
 div#wrap {width: auto;}
 .header-container .header-hr, .header-container .header-info {
     width: 75%;
@@ -58,7 +58,15 @@ div#wrap {width: auto;}
 .col-sm-1 {
   width: 8.33333333%;
 }
-section#anagrafica {
+section#anagrafica,
+section#fido,
+section#esponenti,
+section#recensioni,
+section#sedi-attive,
+section#attivita-svolta,
+section#fatturato,
+section#eventi-negativi,
+section#situazione-finanziaria{
   page-break-before: always;
 }
 .section-container row .box-left,
