@@ -267,9 +267,7 @@ div#wrap {
 }
 
 
-@media only print{
-  @charset "UTF-8";
-/* CSS Document */
+@media print{
 body {font-size: 10pt;}
 div#wrap {width: auto;}
 .header-container .header-hr, .header-container .header-info {
