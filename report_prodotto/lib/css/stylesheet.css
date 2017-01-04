@@ -275,3 +275,13 @@ div#wrap {
   height: 25px;
   line-height: 25px;
 }
+
+@media (max-width: 1024px){
+  .box-left.box.col-sm-4{
+    width: 30% !important;
+    margin-right: 3% !important;
+  }
+  .box-empty{
+    display: none;
+  }
+}
