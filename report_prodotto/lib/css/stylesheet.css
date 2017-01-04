@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;
+	font-family:Verdana, sans-serif;
+}
+p{
+  text-align: justify;
+}
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 24px;
+}
+h3{
+  font-size: 20px;
+}
+h2.title{
+	margin-top:0;
+	font-size: 30px;
+	color:#c41230;
+}
+h3.subtitle{
+	margin-bottom:20px;
+}
+.header-container{
+  width: 100%;
+  float: left;
+  height: 50px;
+  margin: 40px 0;
+}
+.header-container .header-logo{
+  width: auto;
+  float: left;
+}
+.header-container .header-hr,
+.header-container .header-info{
+  width: 85%;
+  float: right;
+  height: 23px;
+  border-bottom:2px solid #3780b5;
+  padding-right: 15px;
+}
+.header-container .header-info{
+  border: 0;
+}
+.header-container .header-hr span,
+.header-container .header-info span{
+  width: 100%;
+  float: right;
+  text-align: right;
+}
+.header-container .header-info span{
+  font-size: 24px;
+  font-weight: bold;
+}
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
+/* Wrapper for page content to push down footer */
+div#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto 40px;
+  /* Pad bottom by footer height */
+  padding: 0 10px 30px;
+  float: left;
+}
+.section-container #row-richiedente .box{
+  min-height:140px;
+  margin-bottom:15px;
+}
+.section-container #row-info-evasa .box{
+  margin-bottom:15px;
+  min-height:495px;
+}
+.section-container #row-contatti .box{
+  margin-bottom:15px;
+  min-height:130px;
+}
+.section-container row .box-left,
+.section-container row .box-right{
+  background: #ddd;
+}
+.section-container row .arrow{
+  background: url("../img/arrow.png") no-repeat top right #ddd;
+}
+.section-container row .border{
+  background: #fff;
+  border: 1px solid #000;
+}
+.section-container row .bkg{
+  background: #038aa4;
+  color:#fff;
+}
+.section-container row .bkg h1,
+.section-container row .bkg h2{
+  text-align: center;
+}
+.section-container ul{
+  padding: 10px 0;
+  margin: 0;
+}
+.section-container ul.list-item{
+  float: left;
+  width: 100%;
+  padding: 0 15px;
+}
+.section-container ul li{
+  list-style-type: none;
+  height: 30px;
+  line-height: 30px;
+}
+.section-container h4.title{
+  color:#038aa4;
+  width: 100%;
+}
+.section-container#eventi-negativi h4.title{
+  color:#000;
+  width: 100%;
+  margin: 20px 0 10px 0;
+  width: 100%;
+  float: left;
+}
+.section-container .border h4.title,
+.section-container .center{
+  text-align: center;
+}
+.section-container h5.subtitle{
+  margin-bottom:0;
+  font-size: 16px;
+}
+.section-container header.header-row{
+  background: #038aa4;
+  color:#fff;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  width: 100%;
+  padding: 0 15px;
+  margin: 30px 0 20px 0;
+}
+.section-container header.header-row h2{
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.section-container header.header-row h2 i{
+  margin-right: 10px;
+}
+.section-container row div.line-box{
+  height: 30px;
+  border-bottom:1px solid #ddd; 
+  line-height: 30px;
+  margin-bottom: 2px;
+}
+.section-container#fatturato row div.line-box{
+  border-bottom: 1px solid #038aa4;
+  margin-bottom: 2px;
+}
+.section-container row div.bkg-box{
+  background: #038aa4;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 2px;
+  border-bottom:1px solid #ddd; 
+}
+.section-container row div.color-box{
+  color:#038aa4;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 2px;
+  border-bottom:1px solid #ddd; 
+  font-weight: bold;
+}
+.section-container p.description{
+  width: 100%;
+  padding: 0 15px;
+  float: left;
+}
+.section-container p.small-description{
+  width: 100%;
+  padding: 0 15px;
+  float: left;
+  font-size: 11px;
+  font-style: italic;
+}
+.section-container h4.title-recensioni,
+.section-container p.recensioni{
+  width: 100%;
+  padding: 0 15px;
+  float: left;
+  color: #666;
+}
+.section-container#soci-azionisti p.small-description,
+.section-container#dati-finanziari p.description{
+  margin-top: 15px;
+}
+.section-container#eventi-negativi p.description{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.section-container h4.subtitle{
+  width: 100%;
+  padding: 0 15px;
+  float: left;
+  background: #ddd;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 0;
+  color: #666;
+}
+.section-container h4.strong{
+  width: 100%;
+  padding: 0 15px;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.section-container span.strong{
+  font-weight: bold;
+}
+.section-container p.description.img-section{
+  text-align: center;
+}
+.section-container row.header-row{
+  height: 30px;
+  line-height: 30px;
+  margin: 10px 0;
+  background: #038aa4;
+  color:#fff;
+  float: left;
+  width: 100%;
+}
+.section-container row.header-row div{
+  background: #038aa4;
+  color:#fff;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.section-container .sedi-secondarie{
+  width: 100%;
+  padding: 0 15px;
+  float: left;
+  margin-bottom: 30px;
+}
+.section-container .sedi-secondarie row div.line-box{
+  border-bottom:0; 
+}
