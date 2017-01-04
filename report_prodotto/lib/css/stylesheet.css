@@ -221,6 +221,9 @@ div#wrap {
   margin-top: 0;
   color: #666;
 }
+.section-container#pagamenti h4.subtitle{
+  margin-top: 20px;
+}
 .section-container h4.strong{
   width: 100%;
   padding: 0 15px;
