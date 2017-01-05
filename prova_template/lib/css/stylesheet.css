@@ -293,6 +293,22 @@ header .intro-text .intro-heading {
   }
 }
 /*Portfolio*/
+#portfolio .nav-tabs{
+  border: 0;
+  margin-bottom: 20px;
+}
+#portfolio .nav-tabs > li > a{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 0;
+  border-radius: 0;
+  color:#d31145;
+}
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus{
+  background: #d31145;
+  color:#fff !important;
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -342,6 +358,9 @@ header .intro-text .intro-heading {
   background-color: white;
   text-align: center;
   padding: 25px;
+}
+#portfolio .portfolio-item .portfolio-caption-full{
+  max-width: 1800px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
