@@ -64,6 +64,7 @@
     width: 30% !important;
     margin-right: 3% !important;
   }
+
   .page-break	{ 
     page-break-after: always; 
     page-break-inside: avoid;
