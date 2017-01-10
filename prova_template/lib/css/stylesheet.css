@@ -606,7 +606,7 @@ main .intro-text .intro-heading {
   height: 80px;
   position: absolute;
   z-index: 100;
-  color: white;
+  color:#777;
   text-align: center;
   box-shadow: 6px 5px 10px #ccc;
   border-radius: 90px;
