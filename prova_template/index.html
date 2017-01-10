@@ -33,15 +33,19 @@ colore scuro: verde 045d75 -> rosso aa0734
     <!-- Theme CSS -->
     <link href="lib/css/stylesheet.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="lib/css/portfolio.css" />
-	<link rel="stylesheet" type="text/css" href="lib/css/component.css" />
+    <!--Js Portfolio-->
 	<script src="lib/js/snap.svg-min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script>
+		document.documentElement.className = 'js';
+	</script>
 
 </head>
 
@@ -80,7 +84,7 @@ colore scuro: verde 045d75 -> rosso aa0734
         <!-- /.container-fluid -->
     </nav><!-- / Navigation -->
 
-    <!-- Header -->
+    <!-- Header 
     <header>
         <div class="container">
             <div class="intro-text">
@@ -89,7 +93,17 @@ colore scuro: verde 045d75 -> rosso aa0734
                 <a href="#portfolio" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
-    </header>  
+    </header>  -->
+ 
+	<main>
+		<!-- Initial markup -->
+		<div class="segmenter" style="background-image: url(lib/img/header-bg.jpg)"></div>
+		<div class="intro-text">
+            <div class="intro-lead-in">Welcome To Our Studio!</div>
+            <div class="intro-heading">It's Nice To Meet You</div>
+            <a href="#portfolio" class="page-scroll btn btn-xl">Tell Me More</a>
+        </div>
+	</main>
 
 <!-- Services Section 
     <section id="services">
@@ -139,102 +153,156 @@ colore scuro: verde 045d75 -> rosso aa0734
             </div>
             
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#siti-vetrina" aria-controls="siti-vetrina" role="tab" data-toggle="tab">Siti Vetrina</a></li>
+                <li role="presentation" class="active"><a href="#widget" aria-controls="widget" role="tab" data-toggle="tab">Widget</a></li>
                 <li role="presentation"><a href="#siti-wordpress" aria-controls="siti-wordpress" role="tab" data-toggle="tab">Siti Wordpress</a></li>
-                <li role="presentation"><a href="#widget" aria-controls="widget" role="tab" data-toggle="tab">Widget</a></li>
+                <li role="presentation"><a href="#siti-vetrina" aria-controls="siti-vetrina" role="tab" data-toggle="tab">Siti Vetrina</a></li>    
             </ul>
 
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="siti-vetrina">
-                    <!--<div class="row">
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
+                <div role="tabpanel" class="tab-pane active" id="widget">
+                    <div id="grid" class="grid clearfix">
+                        <a href="#" class="full-width" data-toggle="modal" data-target="#matchCenter" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
+                            <figure>
+                                <img src="lib/img/portfolio/match_center.jpg" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                                <figcaption>
+                                    <h2>Match Center</h2>
+                                    <p>Graphic Design</p>
+                                    <button>View</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <!-- Modal Match Center-->
+                        <div class="modal fade" id="matchCenter" tabindex="-1" role="dialog" aria-labelledby="matchCenterLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="matchCenterLabel">Match Center</h4>
                                     </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>  
                                 </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/alteregoitaly.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Alter Ego Italy</h4>
-                                <p class="text-muted">Graphic Design</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
+                        <a href="#" class="odd" data-toggle="modal" data-target="#risultatiSportivi" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
+                            <figure>
+                                <img src="lib/img/portfolio/risultati_sportivi.jpg" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                                <figcaption>
+                                    <h2>Risultati Sportivi</h2>
+                                    <p>Graphic Design</p>
+                                    <button>View</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <!-- Modal Risultati Sportivi-->
+                        <div class="modal fade" id="risultatiSportivi" tabindex="-1" role="dialog" aria-labelledby="risultatiSportiviLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="risultatiSportiviLabel">Risultati Sportivi</h4>
                                     </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>  
                                 </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/antonioiengo.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Antonio Iengo</h4>
-                                <p class="text-muted">Website Design</p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
+                        <a href="#" class="even" data-toggle="modal" data-target="#calendarioEventi" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
+                            <figure>
+                                <img src="lib/img/portfolio/calendario_eventi.jpg" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                                <figcaption>
+                                    <h2>Calendario Eventi</h2>
+                                    <p>Graphic Design</p>
+                                    <button>View</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <!-- Modal Calendario Eventi-->
+                        <div class="modal fade" id="calendarioEventi" tabindex="-1" role="dialog" aria-labelledby="calendarioEventiLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="calendarioEventiLabel">Calendario Eventi</h4>
                                     </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>  
                                 </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/gammapiu.jpg" class="img-responsive" alt="">
-                            </a>                                
-                            <div class="portfolio-caption">
-                                <h4>Gamma Più</h4>
-                                <p class="text-muted">Website Design</p>
                             </div>
-                        </div>              
+                        </div>
+                        <a href="#" class="odd" data-toggle="modal" data-target="#classificaLive" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
+                            <figure>
+                                <img src="lib/img/portfolio/classifica_live.jpg" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                                <figcaption>
+                                    <h2>Classifica Live</h2>
+                                    <p>Graphic Design</p>
+                                    <button>View</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <!-- Modal Classifica Live-->
+                        <div class="modal fade" id="classificaLive" tabindex="-1" role="dialog" aria-labelledby="classificaLiveLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="classificaLiveLabel">Classifica Live</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src=" http://portfolio.franciwebdesigner.com/lib/images/onlypro.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Only Pro</h4>
-                                <p class="text-muted">Graphic Design</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/lellapepe.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Lella Pepe</h4>
-                                <p class="text-muted">Website Design</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/fauvert.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Fauvert</h4>
-                                <p class="text-muted">Website Design</p>
-                            </div>
-                        </div>              
-                    </div>-->
+                </div>
 
+                <div role="tabpanel" class="tab-pane" id="siti-wordpress">
+                    <div id="grid" class="grid clearfix">
+                        <a href="http://www.piudi21.it/" class="odd" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
+                            <figure>
+                                <img src="lib/img/portfolio/piudi21.jpg" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                                <figcaption>
+                                    <h2>Più di 21</h2>
+                                    <p>Graphic Design</p>
+                                    <button>View</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="http://www.valeriamontaldi.it/" class="even" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
+                            <figure>
+                                <img src="lib/img/portfolio/valeriamontaldi.jpg" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                                <figcaption>
+                                    <h2>Valeria Montaldi</h2>
+                                    <p>Graphic Design</p>
+                                    <button>View</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+                        <a href="http://www.centroippicoilghiro.it/" class="odd" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
+                            <figure>
+                                <img src="lib/img/portfolio/centroippicoilghiro.jpg" />
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+                                <figcaption>
+                                    <h2>Centro Ippico Il Ghiro</h2>
+                                    <p>Graphic Design</p>
+                                    <button>View</button>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="siti-vetrina">
                     <div id="grid" class="grid clearfix">
                         <a href="#" class="odd" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
                             <figure>
@@ -298,198 +366,6 @@ colore scuro: verde 045d75 -> rosso aa0734
                                 <figcaption>
                                     <h2>Fauvert</h2>
                                     <p>A grape silver beet watercress potato.</p>
-                                    <button>View</button>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-
-                <div role="tabpanel" class="tab-pane" id="siti-wordpress">
-                    <!--<div class="row">
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/piudi21.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Più di 21</h4>
-                                <p class="text-muted">Graphic Design</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/valeriamontaldi.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Valeria Montaldi</h4>
-                                <p class="text-muted">Website Design</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/centroippicoilghiro.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Centro Ippico il Ghiro</h4>
-                                <p class="text-muted">Website Design</p>
-                            </div>
-                        </div>              
-                    </div>-->
-                    <div id="grid" class="grid clearfix">
-                        <a href="#" class="odd" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
-                            <figure>
-                                <img src="lib/img/portfolio/piudi21.jpg" />
-                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-                                <figcaption>
-                                    <h2>Più di 21</h2>
-                                    <p>Graphic Design</p>
-                                    <button>View</button>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="#" class="odd" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
-                            <figure>
-                                <img src="lib/img/portfolio/valeriamontaldi.jpg" />
-                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-                                <figcaption>
-                                    <h2>Valeria Montaldi</h2>
-                                    <p>Graphic Design</p>
-                                    <button>View</button>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="#" class="odd" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
-                            <figure>
-                                <img src="lib/img/portfolio/centroippicoilghiro.jpg" />
-                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-                                <figcaption>
-                                    <h2>Centro Ippico Il Ghiro</h2>
-                                    <p>Graphic Design</p>
-                                    <button>View</button>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                </div>
-
-                <div role="tabpanel" class="tab-pane" id="widget">
-                    <!--<div class="row">
-                        <div class="col-md-12 col-sm-12 portfolio-item">
-                            <a href="#portfolioModal1" class="portfolio-link portfolio-link-full" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/match_center.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption portfolio-caption-full">
-                                <h4>Match Center</h4>
-                                <p class="text-muted">Graphic Design</p>
-                            </div>
-                        </div>
-                    </div>-->
-                     <!--<div class="row">
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/risultati_sportivi.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Risultati Sportivi</h4>
-                                <p class="text-muted">Website Design</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/calendario_eventi.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Calendario Eventi</h4>
-                                <p class="text-muted">Website Design</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 portfolio-item">
-                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img src="http://portfolio.franciwebdesigner.com/lib/images/classifica_live.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="portfolio-caption">
-                                <h4>Classifica Live</h4>
-                                <p class="text-muted">Website Design</p>
-                            </div>
-                        </div>            
-                    </div>-->
-
-                    <div id="grid" class="grid clearfix">
-                        <a href="#" class="odd full-width" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
-                            <figure>
-                                <img src="lib/img/portfolio/match_center.jpg" />
-                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-                                <figcaption>
-                                    <h2>Match Center</h2>
-                                    <p>Graphic Design</p>
-                                    <button>View</button>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="#" class="odd" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
-                            <figure>
-                                <img src="lib/img/portfolio/risultati_sportivi.jpg" />
-                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-                                <figcaption>
-                                    <h2>Risultati Sportivi</h2>
-                                    <p>Graphic Design</p>
-                                    <button>View</button>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="#" class="odd" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
-                            <figure>
-                                <img src="lib/img/portfolio/calendario_eventi.jpg" />
-                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-                                <figcaption>
-                                    <h2>Calendario Eventi</h2>
-                                    <p>Graphic Design</p>
-                                    <button>View</button>
-                                </figcaption>
-                            </figure>
-                        </a>
-                        <a href="#" class="odd" data-path-hover="M 0,0 0,50 90,100 180.5,50 180,0 z">
-                            <figure>
-                                <img src="lib/img/portfolio/classifica_live.jpg" />
-                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-                                <figcaption>
-                                    <h2>Classifica Live</h2>
-                                    <p>Graphic Design</p>
                                     <button>View</button>
                                 </figcaption>
                             </figure>
@@ -927,36 +803,44 @@ Lavorando per il cliente RCS ho avuto l'opportunità di affinare le mie capacit�
     <!-- Theme JavaScript -->
     <script src="lib/js/agency.min.js"></script>
 
-    <!-- Esempio Portfolio -->
+    <!-- Script Portfolio -->
     <script>
 	(function() {
-	
 		function init() {
 			var speed = 300,
 				easing = mina.backout;
-
 			[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
 				var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
 					pathConfig = {
 						from : path.attr( 'd' ),
 						to : el.getAttribute( 'data-path-hover' )
 					};
-
 				el.addEventListener( 'mouseenter', function() {
 					path.animate( { 'path' : pathConfig.to }, speed, easing );
 				} );
-
 				el.addEventListener( 'mouseleave', function() {
 					path.animate( { 'path' : pathConfig.from }, speed, easing );
 				} );
 			} );
 		}
-
 		init();
-
 	})();
 	</script>
-
+    <!--Script Header Effect-->
+    <script src="lib/js/anime.min.js"></script>
+	<script src="lib/js/imagesloaded.pkgd.min.js"></script>
+	<script src="lib/js/main.js"></script>
+	<script>
+        (function() {
+            var headline = document.querySelector('.trigger-headline'),
+            trigger = document.querySelector('.btn--trigger'),
+            segmenter = new Segmenter(document.querySelector('.segmenter'), {
+                onReady: function() {
+                    segmenter.animate();
+                }
+            });
+        })();
+		</script>
 </body>
 
 </html>
