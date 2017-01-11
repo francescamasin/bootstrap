@@ -836,7 +836,9 @@ Lavorando per il cliente RCS ho avuto l'opportunit√† di affinare le mie capacit√
             trigger = document.querySelector('.btn--trigger'),
             segmenter = new Segmenter(document.querySelector('.segmenter'), {
                 onReady: function() {
-                    segmenter.animate();
+                    $(window).scroll(function(){
+                        segmenter.animate();
+                    });
                 }
             });
         })();
