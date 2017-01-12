@@ -371,7 +371,7 @@ main .intro-text .intro-heading {
 	float: left;
 	max-width: 420px;
 	width: 33%;
-	color: #333;
+	color: #232f54;
 }
 #portfolio .grid a.full-width{
 	max-width: 1640px;
@@ -384,7 +384,7 @@ main .intro-text .intro-heading {
 	position: relative;
 	overflow: hidden;
 	margin: 5px;
-	background: #333;
+	background: #232f54;
 }
 #portfolio .grid figure img {
 	position: relative;
@@ -415,7 +415,7 @@ main .intro-text .intro-heading {
 }
 #portfolio .grid figcaption p {
 	padding: 0 20px;
-	color: #333;
+	color: #232f54;
 	font-weight: 300;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
